@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "본인인증",
+  "name": "비대면 대출 본인인증",
   "icons": [
     {
       "src": "favicon.ico",

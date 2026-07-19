@@ -1,1 +1,18 @@
+# dependencies
 node_modules/
+
+# build
+dist/
+build/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs / editor
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.tsbuildinfo
