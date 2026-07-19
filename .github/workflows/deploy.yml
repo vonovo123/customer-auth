@@ -29,6 +29,19 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Verify CORS proxy secret
+        env:
+          VITE_CORS_PROXY_URL: ${{ secrets.VITE_CORS_PROXY_URL }}
+        run: |
+          if [ -z "$VITE_CORS_PROXY_URL" ]; then
+            echo "::error::Repository secret VITE_CORS_PROXY_URL is empty or missing."
+            echo "GitHub → Settings → Secrets and variables → Actions → New repository secret"
+            echo "Name must be exactly: VITE_CORS_PROXY_URL"
+            echo "Value example: https://your-worker.your-subdomain.workers.dev"
+            exit 1
+          fi
+          echo "VITE_CORS_PROXY_URL is set (length ${#VITE_CORS_PROXY_URL})"
+
       - name: Build
         run: npm run build
         env:
