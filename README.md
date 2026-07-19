@@ -1,6 +1,6 @@
 # 본인인증 프론트엔드
 
-[데모 페이지](https://vonovo123.github.io/honest-front-assignment-react/identity-authentication)
+[데모 페이지](https://vonovo123.github.io/customer-auth/identity-authentication)
 
 Vite + React + TypeScript 기반의 비대면 대출 본인인증 UI입니다.
 

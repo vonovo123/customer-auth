@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: '/honest-front-assignment-react/',
+    base: '/customer-auth/',
     server: {
       proxy: {
         '/api': {
